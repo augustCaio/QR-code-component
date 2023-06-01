@@ -4,10 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors:{
-				'qr-gray': '#d5e1ef',
-				'qr-white': '#ffffff',
-				'qr-d-blue': '#29354b',
-				'qr-l-gray': '#898e94',
+				'qr-white': 'hsl(0, 0%, 100%)',
+				'qr-l-gray': 'hsl(212, 45%, 89%)',
+				'qr-g-blue': 'hsl(220, 15%, 55%)',
+				'qr-d-blue': 'hsl(218, 44%, 22%)',
+			},
+			fontFamily: {
+				'outfit': ['Outfit', 'sans-serif'],
 			}
 		},
 	},

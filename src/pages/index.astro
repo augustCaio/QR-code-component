@@ -7,17 +7,23 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
+		<!--importação google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
 		<title>QR code component</title>
 	</head>
-	<body class="bg-qr-gray">
-		<main>
-			<section class="flex items-center justify-center h-screen shadow-lg">
-				<div class="bg-qr-white p-[1rem] flex flex-col items-center w-[250px] h-[400px] rounded-xl">
-					<img class="w-[221px] rounded-xl" src="/image-qr-code.png" alt="Qr code">
-					<div class="flex flex-col gap-[1rem] h-[240px] mt-[1rem]">
-						<h1 class="text-qr-d-blue font-extrabold text-[1rem] text-center">Improve your front-end skills by building projects</h1>
-						<p class="font-normal text-qr-l-gray text-center text-[0.9rem]">Scan the QR code to visit Frontend Mentor and takeyour coding skill to next level</p>
-					</div>
+	<body class="bg-qr-l-gray w-screen">
+		<main class="flex items-center justify-center h-screen">
+			<section class="bg-qr-white p-[20px] flex flex-col items-center justify-center gap-[25px] w-[300px] rounded-[20px] shadow-xl">
+				<div>
+					<img class="max-w-auto rounded-[15px]" src="/image-qr-code.png" alt="QR Code">
+				</div>
+				<div class="flex flex-col gap-[20px]">
+					<h1 class="font-outfit font-[700] text-[1.3rem] text-qr-d-blue text-center leading-[25px]">Improve your front-end skills by building projects</h1>
+					<p class="font-outfit font-[400] text-[0.9rem] text-qr-g-blue text-center leading-[20px]">Scan the QR code to visit Frontend Mentor and take your coding skills to next level</p>
 				</div>
 			</section>
 		</main>
